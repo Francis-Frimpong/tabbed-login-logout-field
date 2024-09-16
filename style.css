@@ -1,0 +1,138 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C5CCE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+}
+
+#form-section {
+    background-color: #E0E4F8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.circle {
+    background-color: #F1A175;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.asthetics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#forms {
+    display: flex;
+    flex-direction: column;
+    background-color: #FCFCFC;
+    padding: 2em;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #949191;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #F1A175;
+    outline: none;
+}
+
+button {
+    background-color: #F1A175;
+    width: 100%;
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e98f5e;
+    
+}
+
+p {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+}
+
+p span {
+    color: #F1A175;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    #form-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .asthetics {
+        margin-bottom: 20px;
+    }
+
+    #forms {
+        max-width: 100%;
+    }
+}
